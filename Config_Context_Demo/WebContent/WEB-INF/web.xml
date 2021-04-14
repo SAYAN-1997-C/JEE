@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Config_Context_Demo</display-name>
+  <welcome-file-list>
+    <welcome-file>Employee.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+  <param-name>Country</param-name>
+  <param-value>We are Indian</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServe1</display-name>
+    <servlet-name>EmployeeServe1</servlet-name>
+    <servlet-class>master.servlet.EmployeeServe1</servlet-class>
+    <init-param>
+    <param-name>Phone_no</param-name>
+    <param-value>9830417858</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServe1</servlet-name>
+    <url-pattern>/EmployeeServe1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServe2</display-name>
+    <servlet-name>EmployeeServe2</servlet-name>
+    <servlet-class>master.servlet.EmployeeServe2</servlet-class>
+    <init-param>
+    <param-name>Phone_no</param-name>
+    <param-value>8334993741</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServe2</servlet-name>
+    <url-pattern>/EmployeeServe2</url-pattern>
+  </servlet-mapping>
+</web-app>
